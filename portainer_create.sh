@@ -52,7 +52,7 @@ else
     -v /var/run/docker.sock:/var/run/docker.sock \
     -v portainer_data:/data \
     --restart always \
-    -h portainer \
-    --name portainer
+    -h ${portainer_name} \
+    --name ${portainer_name}
     portainer/portainer
   fi
